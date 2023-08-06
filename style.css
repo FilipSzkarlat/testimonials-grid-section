@@ -131,4 +131,9 @@ body{
     #testimonial-2, #testimonial-3{
         flex-basis: 35%;
     }
+
+    body{
+        height: 100vh;
+        justify-content: center;
+    }
 }
