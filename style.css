@@ -1,0 +1,134 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: hsl(0, 0%, 90%);
+    display: flex;
+    flex-direction: column;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 13px;
+}
+
+#testimonial-1{
+    background-color: hsl(263, 55%, 52%);
+    color: white;
+    margin-top: 50px;
+    position: relative;
+}
+
+#testimonial-2{
+    background-color: hsl(217, 19%, 35%);
+    color: white;
+}
+
+#testimonial-3{
+    background-color: white;
+}
+
+#testimonial-4{
+    background-color: hsl(219, 29%, 14%);
+    color: white;
+}
+
+#testimonial-5{
+    background-color: white;
+}
+
+#testimonial-3, #testimonial-5{
+    color: hsl(217, 19%, 35%)
+}
+
+.box{
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.2);
+}
+
+.box p{
+    opacity: 70%;
+}
+
+.header .name{
+    opacity: 100%;
+    font-size: 1rem;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header img{
+    border-radius: 50%;
+    margin-right: 20px;
+    height: 30px;
+}
+
+#testimonial-1 .header img{
+    border: 2px solid rgb(180, 126, 238);
+}
+
+#testimonial-4 img{
+    border: 2px solid rgb(112, 11, 185);
+}
+
+.box h4{
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    z-index: 2;
+    position: relative;
+}
+
+.opacity{
+    opacity: 0.3;
+}
+
+#quote{
+    position: absolute;
+    right: 8%;
+    top: 0;
+    z-index: 1;
+}
+
+@media(min-width: 576px){
+
+    #testimonial-grid-container,
+    #top,
+    #bottom,
+    #main-left{
+        display: flex;
+    }
+
+    #testimonial-grid-container{
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+
+    #top, #bottom{
+        flex-basis: 50%;
+    }
+
+    #testimonial-5{
+        flex-basis: 25%;
+    }
+
+    #main-left{
+        flex-basis: 75%;
+        flex-direction: column;
+    }
+
+    #testimonial-1, #testimonial-4{
+        margin: 20px;
+        flex-basis: 65%;
+    }
+
+    #testimonial-2, #testimonial-3{
+        flex-basis: 35%;
+    }
+}
